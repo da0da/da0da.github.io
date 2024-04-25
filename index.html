@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TMNF replay viewer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <input type="file" id="gbxFile" style="display: none;" />
+    <a style="float: right;" href="https://github.com/da0da/tm-viewer-backend/tree/master">backend source</a>
+    <div>
+        <input type="button" value="Upload replay" onclick="document.getElementById('gbxFile').click();" />
+        <button onclick="clearAll()">Clear</button>
+        <p id="status"></p>
+    </div>
+    <div id="results"></div>
+</body>
+<script src="script.js"></script>
+</html>
